@@ -300,3 +300,107 @@ body {
   transform: translateX(0) scale(1);
   opacity: 1;
 }
+
+/* =============== RESPONSIVE DESIGN =============== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 15px;
+  }
+  .hero {
+    padding: 80px 30px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .about-text {
+    padding: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .auth {
+    margin-top: 10px;
+  }
+  .hero {
+    padding: 60px 20px;
+    min-height: 300px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .countdown {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .time-card {
+    width: 80px;
+    height: 80px;
+  }
+  .time-card .number {
+    font-size: 1.4rem;
+  }
+  .time-card .label {
+    font-size: 0.8rem;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 100%;
+    min-height: 250px;
+  }
+  .about-text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+  .dummy-section {
+    padding: 60px 15px;
+  }
+  .dummy-section .card {
+    padding: 25px;
+  }
+}
+
+/* Extra Small (HP layar kecil <480px) */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+  .auth .signup {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+}
